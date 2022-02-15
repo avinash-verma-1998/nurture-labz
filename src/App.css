@@ -1,14 +1,6 @@
 .app {
   margin: 0;
   padding: 0;
-  display: grid;
-  height: 20px;
-  grid-template-columns: repeat(1,12);
   background-color: black;
 }
-.grid-item{
-  background-color: blue;
-  grid-column-start: 2;
-  grid-column-end: 4;
 
-}

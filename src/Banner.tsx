@@ -1,13 +1,13 @@
 import React from 'react';
-import "./nav.css"
+import "./banner.css"
 
-function Navbar (){
+function Banner (){
 
     return (
-        <nav className="nav">
+        <nav className="banner">
             Lorem Ipsum is simply dummy text of the printing
         </nav>
     );
 }
 
-export default Navbar;
+export default Banner;
