@@ -5,6 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --buffer-blue: #3772FF;
+  --text-color:#808191;
 
 }
 
