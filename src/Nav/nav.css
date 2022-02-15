@@ -1,0 +1,10 @@
+.nav {
+  background: var(--buffer-blue);
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+  font-size: 14px;
+  line-height: 26px;
+}
