@@ -2,7 +2,7 @@ import React from "react";
 
 import "./main.css"
 import Sidebar from "./Sidebar/Sidebar";
-import News from "./News";
+import News from "./News/News";
 function MainPage() {
   return (
     <div className="main-section">
