@@ -59,8 +59,8 @@ ul > li.sidebar-list-item > a {
   grid-column-end: 10;
 }
 .news-navbar {
-   display: flex;
-   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .nav-section {
   color: white;
@@ -84,11 +84,11 @@ ul > li.sidebar-list-item > a {
 }
 .balance > p.amount {
   padding-left: 1em;
-} 
+}
 .chip {
   background-color: var(--light-blue);
   color: var(--buffer-blue);
-  margin:auto 1em;
+  margin: auto 1em;
   border-radius: 5px;
   padding: 0 1em;
   font-size: 12px;
@@ -96,4 +96,38 @@ ul > li.sidebar-list-item > a {
   display: inline;
   height: 20px;
   line-height: 20px;
+}
+.promo-panel {
+position: relative;
+width: 100%;
+  background-color: var(--light-blue);
+  height: 6em;
+  border-radius: 5px;
+}
+.promo-panel > p.content {
+  color: black;
+  padding: 1em;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.86em;
+}
+.promo-panel > img.promo-img{
+  position: absolute;
+  right:1em;
+  top:10px;
+}
+.promo-panel > button.promo-button {
+  border: none;
+  color : black;
+  font-weight:600;
+  font-size: 12px;
+  line-height: 24px;
+  font-style: bold;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0 1.5em;
+  position: absolute;
+  bottom : 1em;
+  left :1em;
 }
