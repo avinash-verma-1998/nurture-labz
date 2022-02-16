@@ -131,3 +131,65 @@ width: 100%;
   bottom : 1em;
   left :1em;
 }
+.rewards {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 2em;
+  
+}
+.rewards > div.rewards-content > p{
+  color:white;
+  font-family: Poppins;
+font-style: normal;
+margin: 0;
+}
+.rewards > div.rewards-content > p:first-child
+{
+  font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+}
+.rewards > div.rewards-content > p.amount
+{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 48px;
+}
+.rewards > div.rewards-content > div.coin-values{
+  display: flex;
+  justify-content: space-around;
+}
+.rewards > div.rewards-content > div.coin-values > p{
+  color:white;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+font-size: 12px;
+line-height: 17px;
+padding: 1em;
+}
+.custom-link{
+  display: flex;
+  justify-self: end;
+  background-color: var(--buffer-blue);
+ 
+   padding : 0.5em 1.5em;
+   margin :  auto 0 ;
+   margin-right: 2em;
+   height: 2em;
+   border-radius: 10px;
+   align-items: center;
+   
+}
+.custom-link > img{
+  padding-right: 0.5em;
+}
+.custom-link > a{
+  font-size : 1em;
+   line-height: 2em;
+   font-weight: bold;
+  text-decoration: none;
+  color:white;
+
+}

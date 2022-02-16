@@ -1,5 +1,5 @@
 import React from 'react'
-import Balance from './Balance'
+import Balance from './components/Balance'
 
 export default function Navbar() {
   return (

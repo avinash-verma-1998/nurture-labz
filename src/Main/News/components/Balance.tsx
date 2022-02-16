@@ -1,6 +1,6 @@
 import { Chip } from '@mui/material'
 import React from 'react'
-import wallet from '../../resources/Wallet.svg'
+import wallet from '../../../resources/Wallet.svg'
 
 type BalanceProps = {
     tier:Number;
