@@ -193,3 +193,33 @@ padding: 1em;
   color:white;
 
 }
+.referal{
+  color: var(--text-color);
+  font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+width: 50%;
+}
+.referal-details{
+  color :white;
+  display: flex;
+  font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+align-items: center;
+justify-content: start;
+margin: 0;
+}
+.referal-link{
+  color:white;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+font-size: 14px;
+line-height: 24px;
+}
+.referals{
+  display: flex;
+}
