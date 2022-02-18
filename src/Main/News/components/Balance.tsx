@@ -13,7 +13,7 @@ export default function Balance({tier, name, amount}:BalanceProps) {
     <div className='balance'>
         <img src={wallet} alt="wallet" />
         <p className='amount'>{amount}$ {name} </p>
-        <p className='chip'>Tier {tier}</p>
+        <p className='chip-sm'>Tier {tier}</p>
     </div>
   )
 }

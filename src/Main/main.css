@@ -85,7 +85,7 @@ ul > li.sidebar-list-item > a {
 .balance > p.amount {
   padding-left: 1em;
 }
-.chip {
+.chip-sm {
   background-color: var(--light-blue);
   color: var(--buffer-blue);
   margin: auto 1em;
@@ -97,9 +97,21 @@ ul > li.sidebar-list-item > a {
   height: 20px;
   line-height: 20px;
 }
+.chip-bg {
+  background-color: var(--light-blue);
+  color: var(--buffer-blue);
+  margin: auto 1em;
+  border-radius: 5px;
+  padding: 0 1em;
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 600;
+  font-style: bold;
+  display: inline;
+}
 .promo-panel {
-position: relative;
-width: 100%;
+  position: relative;
+  width: 100%;
   background-color: var(--light-blue);
   height: 6em;
   border-radius: 5px;
@@ -112,15 +124,15 @@ width: 100%;
   font-weight: 500;
   line-height: 1.86em;
 }
-.promo-panel > img.promo-img{
+.promo-panel > img.promo-img {
   position: absolute;
-  right:1em;
-  top:10px;
+  right: 1em;
+  top: 10px;
 }
 .promo-panel > button.promo-button {
   border: none;
-  color : black;
-  font-weight:600;
+  color: black;
+  font-weight: 600;
   font-size: 12px;
   line-height: 24px;
   font-style: bold;
@@ -128,98 +140,180 @@ width: 100%;
   border-radius: 5px;
   padding: 0 1.5em;
   position: absolute;
-  bottom : 1em;
-  left :1em;
+  bottom: 1em;
+  left: 1em;
 }
 .rewards {
   display: flex;
   justify-content: space-between;
   align-content: center;
   margin-top: 2em;
-  
 }
-.rewards > div.rewards-content > p{
-  color:white;
+.rewards > div.rewards-content > p {
+  color: white;
   font-family: Poppins;
-font-style: normal;
-margin: 0;
+  font-style: normal;
+  margin: 0;
 }
-.rewards > div.rewards-content > p:first-child
-{
+.rewards > div.rewards-content > p:first-child {
   font-weight: 500;
-font-size: 18px;
-line-height: 24px;
+  font-size: 18px;
+  line-height: 24px;
 }
-.rewards > div.rewards-content > p.amount
-{
+.rewards > div.rewards-content > p.amount {
   font-weight: 600;
   font-size: 28px;
   line-height: 48px;
 }
-.rewards > div.rewards-content > div.coin-values{
+.rewards > div.rewards-content > div.coin-values {
   display: flex;
   justify-content: space-around;
 }
-.rewards > div.rewards-content > div.coin-values > p{
-  color:white;
+.rewards > div.rewards-content > div.coin-values > p {
+  color: white;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-font-size: 12px;
-line-height: 17px;
-padding: 1em;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 1em;
 }
-.custom-link{
+.custom-link {
   display: flex;
   justify-self: end;
   background-color: var(--buffer-blue);
- 
-   padding : 0.5em 1.5em;
-   margin :  auto 0 ;
-   margin-right: 2em;
-   height: 2em;
-   border-radius: 10px;
-   align-items: center;
-   
+
+  padding: 0.5em 1.5em;
+  margin: auto 0;
+  margin-right: 2em;
+  height: 2em;
+  border-radius: 10px;
+  align-items: center;
 }
-.custom-link > img{
+.custom-link > img {
   padding-right: 0.5em;
 }
-.custom-link > a{
-  font-size : 1em;
-   line-height: 2em;
-   font-weight: bold;
+.custom-link > a {
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: bold;
   text-decoration: none;
-  color:white;
-
+  color: white;
 }
-.referal{
+.referal {
   color: var(--text-color);
   font-weight: 500;
-font-size: 16px;
-line-height: 16px;
-width: 50%;
+  font-size: 16px;
+  line-height: 16px;
+  width: 50%;
 }
-.referal-details{
-  color :white;
+.referal-details {
+  color: white;
   display: flex;
   font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 24px;
-align-items: center;
-justify-content: start;
-margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  justify-content: start;
+  margin: 0;
 }
-.referal-link{
-  color:white;
+.referal-link {
+  color: white;
   display: flex;
   justify-content: space-around;
   font-weight: bold;
-font-size: 14px;
-line-height: 24px;
+  font-size: 14px;
+  line-height: 24px;
 }
-.referals{
+.referals {
   display: flex;
 }
+.sidebar-balance {
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 29px;
+  align-items: center;
+  justify-content: end;
+}
+.sidebar-balance > div {
+  font-size: 10px;
+}
+.tabs {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+}
+.tab {
+  padding: 1em;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: white;
+}
+.tab.active::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  padding-top: 1em;
+  border-bottom: solid 2px var(--buffer-blue);
+}
+.tab-data {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 24px;
+  column-gap: 1em;
+  width: 100%;
+
+  /* display: flex;
+  justify-content: space-around; */
+}
+.tab-data> tr > td,.tab-data>tr > th {
+  padding-left: 1em;
+  padding-top: 1em;
+  text-align: center;
+  /* padding-bottom: 0.5em; */
+  /* padding-top: 0.5em; */
+
+}
+.tab-data-entry{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
+
+}
+.tab-data-entry-info{
+  color:var(--text-color);
+  font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+}
+.poppins-600 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+}
+ .tab-data-entry .asset-entry {
+  display: flex;
+  align-items: center;
+}
+ .asset  {
+  display: flex;
+  align-items: center;
+}
+/* .asset .asset-entry > div > div > span:first-child {
+  color:var(--text-color);
+}
+.asset .asset-entry > div > div .chain-name {
+  font-size: 0.5em;
+}  */
+

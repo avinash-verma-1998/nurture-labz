@@ -10,6 +10,7 @@ import section7 from "../../resources/section-7.svg";
 import section8 from "../../resources/section-8.svg";
 import documentation from "../../resources/documentation.svg";
 import SidebarList from "./SidebarList";
+import SidebarBalance from "./SidebarBalance";
 
 const sidebarList = [
   { text: "Home", svgpath: home },
@@ -28,6 +29,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <SidebarList list={sidebarList} />
+      <SidebarBalance name="XYZ" avatarName="N" amount={0.90} />
     </div>
   );
 }
