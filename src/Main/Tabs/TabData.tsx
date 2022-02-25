@@ -16,7 +16,7 @@ export type tabDataProps = {
   chain: chain;
 };
 
-function formatUsername(name: string) {
+export function formatUsername(name: string) {
   let newName = name;
   if (name.length > 12) {
     newName =
